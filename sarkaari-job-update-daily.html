@@ -1,0 +1,47 @@
+<style>
+    .sn-table *{border:1px solid #767676;font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+    .sn-table thead{background-color:#2185f5;color:#ffffff;}
+    .sn-table tr td:nth-child(1){width:280px}
+</style>
+<strong>Sarkaari Jobs</strong> is a well managed and updated portal for the fresher and job seekers. Latest vacancies notifications of Government Jobs, Private Jobs, Exams and Results can be found easily within a click. You do not need to roam around the site to get the Application forms and apply now links.
+<br/><br/>
+Find Latest Private and <strong>Sarkaari Naukari</strong> Vacancies, Exams and Results, update on <span class="today"></span><br>
+Various Jobs information like number of vacancies and post, eligibility, state, last date of form submission, apply now link, online form fill up, exams notifications etc.
+<br/><br/>
+<div>
+    <h2>Sarkaari Jobs : Latest Sarkaari Naukari Vacancies, Updated on <span class="today"></span></h2>
+    <table class="sn-table">
+        <thead>
+            <th>Sarkaari Naukri</th>
+            <th>Vacancies</th>
+        </thead>
+        <tbody class="table-body"></tbody>
+    </table>
+</div>
+<script>
+    var d=new Date();
+    document.querySelectorAll('.today').forEach(element => {
+        element.innerText=d.getDate()+'-'+(d.getMonth()+1)+'-'+d.getFullYear();
+    });
+    var obj=[
+                {name:"Railway Recruitments",qty:"0"},
+                {name:"Engineering Jobs",qty:"0"},
+                {name:"10th Pass Sarkaari Jobs",qty:"0"},
+                {name:"Diploma Holders Jobs",qty:"0"},
+                {name:"12TH Pass Sarkaari Naukri",qty:"0"},
+                {name:"ITI Sarkaari Naukri",qty:"0"},
+                {name:"Police Recruitment",qty:"0"},
+                {name:"Bank Sarkaari Jobs",qty:"0"},
+                {name:"PSC Jobs",qty:"0"},
+                {name:"SSC Sarkaari Naukri",qty:"0"},
+                {name:"Jobs for Graduates",qty:"0"},
+                {name:"Any Post Graduate Jobs",qty:"0"},
+                {name:"B.Sc Jobs",qty:"0"},
+                {name:"B.Com Jobs",qty:"0"},
+            ];
+        obj.forEach(element => {
+            var tr=document.createElement('TR');
+            tr.innerHTML='<td>'+element.name+'</td><td>'+element.qty+'</td>';            
+            document.querySelector('.table-body').appendChild(tr);
+        });
+</script>
