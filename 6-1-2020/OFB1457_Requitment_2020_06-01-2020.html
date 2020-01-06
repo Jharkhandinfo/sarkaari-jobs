@@ -20,7 +20,7 @@
         {name:"Official Website",caption:"Official Website",link:"http://ofb.gov.in/"},
         {name:"Advertisement Link",caption:"Advertisment Link",link:"https://www.ofb.gov.in/news/news-details/detail-advertisement-for-engagement-of-ta-56th-batch2"},
         {name:"Official Notification PDF file",caption:"Open PDF file",link:"https://www.ofb.gov.in/uploads/Documents/e16a189ba7c652c4d9b22ce033f05c82.pdf"},
-        {name:"Apply Online",caption:"Apply Online",link:"www.ofb.gov.in"},
+        {name:"Apply Online",caption:"Apply Online",link:"https://www.ofb.gov.in"},
     ];
     var postdate=new Date("2020-01-06"),d=Math.round((new Date()-postdate)/86400000);obj.forEach(e=>{var t=document.createElement("TR");void 0!==e.name?(void 0!==e.link?t.innerHTML="<td>"+e.name+'</td><td><a class="sn-links" href="'+e.link+'" rel="nofollow" target="_blank" title="">'+e.link+"</a></td>":t.innerHTML="<td>"+e.name+"</td><td>"+e.value+"</td>",document.querySelector(".table-body").appendChild(t)):void 0!==e.heading&&(t.innerHTML='<td colspan="2">'+e.heading+' <img src=""></td>',document.querySelector(".table-body").appendChild(t))}),d<=7&&document.querySelectorAll("img").forEach(e=>{e.src="https://lh3.googleusercontent.com/-WcKTm3AhHtI/XfeudG1MPeI/AAAAAAAABJ8/oQZnl-gxKTcx5Dt7rldyflEKZLmEYyr4gCLcBGAsYHQ/h120/neo.gif"}),document.querySelectorAll(".today").forEach(e=>{e.innerText=d.getDate()+"-"+(d.getMonth()+1)+"-"+d.getFullYear()});
 </script>
